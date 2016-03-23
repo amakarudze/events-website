@@ -1,0 +1,15 @@
+c:\users\anna\documents\visual studio 2013\Projects\events\events\bin\Microsoft.PythonTools.WebRole.dll
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\attach_server.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\visualstudio_py_debugger.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\visualstudio_py_repl.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\visualstudio_py_util.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\__init__.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\__main__.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\bin\AzureSetup.cfg
+c:\users\anna\documents\visual studio 2013\Projects\events\events\bin\Microsoft.PythonTools.AzureSetup.exe
+c:\users\anna\documents\visual studio 2013\Projects\events\events\bin\Microsoft.PythonTools.AzureSetup.exe.config
+c:\users\anna\documents\visual studio 2013\Projects\events\events\bin\wfastcgi.py
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\web.config
+c:\users\anna\documents\visual studio 2013\Projects\events\events\obj\Debug\web.debug.config
+c:\Users\Anna\Documents\Visual Studio 2013\Projects\events\events\obj\Debug\deployment-updated-orig-prefix.txt
+c:\Users\Anna\Documents\Visual Studio 2013\Projects\events\events\ptvs_virtualenv_proxy.py
