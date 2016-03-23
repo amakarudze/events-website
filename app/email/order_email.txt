@@ -1,0 +1,11 @@
+Dear {{ provider }}
+
+An order has been made for you on our website by {{ name }} for {{ order }}. 
+The service is required on {{ eventdate }}. 
+Other informantion provided is as follows:
+{{ details }} 
+For more information, contact {{ phone }} or email {{ email }}.
+
+Best wishes from,
+
+EventConnect 

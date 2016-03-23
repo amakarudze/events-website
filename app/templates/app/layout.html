@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Event Connect</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700" rel="stylesheet" />
+    <link href="{% static 'app/css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'app/css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+</head>
+
+<body>
+    <div id="header-wrapper" >
+	    <div id="header" class="container">
+		    <div id="logo">
+			<h1><a href="#">EventConnect</a></h1>
+    
+            <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand"></a>
+            </div>
+            <div class="menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'home' %}" accesskey="1">HOME</a></li>
+                    <li><a href="{% url 'about' %}" accesskey="3">ABOUT</a></li>
+                    <li><a href="{% url 'start' %}" accesskey="2">START PLANNING</a></li>
+                    <li><a href="{% url 'contact' %}" accesskey="4">CONTACT</a></li>
+                </ul>
+                {% include 'app/loginpartial.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    <div id="page-wrapper">
+	<div id="page" class="container">
+{% block content %}{% endblock %}
+        <hr/>
+        <footer>
+            <div id="copyright" class="container">
+	<p><a href="http://templated.co" rel="nofollow">Login</a> |  <a href="http://templated.co" rel="nofollow">Register</a>.</p>
+		<ul class="contact">
+			<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+			<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+			<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+			<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+			<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+		</ul>
+
+            <p>&copy; {{ year }} - Event Connect</p>
+            </div>
+        </footer>
+    </div>
+        </div>
+
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

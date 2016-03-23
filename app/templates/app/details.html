@@ -1,0 +1,28 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+<br />
+
+{% for r in provider %}
+    <h2> {{ r.name }}</h2>
+        <table>
+            <tr>
+                <td width="30%"><a href="#"><img src="{{ r.photo }}" alt="" class="image image-full" /></a></td>
+                <td width="70%"><h4><a href="#">{{ r.name }}</a></h4>
+                <p> {{ r.description }}</p>
+                <p>Location: {{ r.location }}</p>
+                <p>Prices: {{ r.prices }}</p>
+                <p>Contacts: {{ r.phone }} / {{ r.email }}</p>
+                <a href="{% url 'order' %}" class="button button-small">Order</a></td>
+            </tr>
+            <tr>
+                <td width="50%"><a href="#"><img src="{{ r.photo1 }}" alt="" class="image image-full" /></a></td>
+                <td width="50%"><a href="#"><img src="{{ r.photo2 }}" alt="" class="image image-full" /></a></td>
+            </tr>
+        </table>
+    
+{% endfor %}
+
+{% endblock %}

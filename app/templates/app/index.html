@@ -1,0 +1,22 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+
+<div id="wrapper" ><a name="s"></a>
+	<div id="three-column" class="container">
+		{% for r in categories %}		
+		<div class="column2">
+			<div class="box"> <a href="#"><img src="{{ r.photo }}" alt="" class="image image-full" /></a>
+				<h3>{{ r.category }}</h3>
+				<p>{{ r.shortdesc }}</p>
+                 <a href="{% url 'list' r.category %}" class="button button-small">Show</a>
+            </div>
+
+		</div>
+        {% endfor %}
+    </div>
+</div>		
+
+{% endblock %}

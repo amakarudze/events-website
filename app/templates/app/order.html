@@ -1,0 +1,17 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+
+<div>
+
+        {% load crispy_forms_tags %}
+        {% crispy order_form %}
+            <form action="{% url 'order' %}" method=post>
+            {% csrf_token %}
+            {{ form }}
+                <input class="button button-small" type="submit" name="ordernow" id="sendemail" value="Order Now" />
+            </form>
+</div>
+{% endblock %}

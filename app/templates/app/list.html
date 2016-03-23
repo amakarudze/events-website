@@ -1,0 +1,30 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}: {{ r.category }}</h2>
+<br />
+
+{% if providers %}
+
+{% for r in providers %}
+
+        <table>
+            <tr>
+                <td width="30%"><a href="{% url 'details' r.slug %}"><img src="{{ r.photo }}" alt="" class="image image-full" /></a></td>
+                <td width="70%"><h4><a href="{% url 'details' r.name %}">{{ r.name }}</a></h4>
+                <p> {{ r.shortdesc }}</p>
+                <p>Location: {{ r.location }}</p>
+                <p>Prices: {{ r.prices }}</p>
+                <p>Contacts: {{ r.phone }} / {{ r.email }}</p>
+                <a href="{% url 'details' r.slug %}" class="button button-small">Details</a>
+                <a href="{% url 'order' %}" class="button button-small">Order</a></td>
+            </tr>
+        </table>
+           
+{% endfor %}
+
+{% else %}
+<p>Sorry, we have no service providers in this category.</p>
+{% endif %}
+{% endblock %}
